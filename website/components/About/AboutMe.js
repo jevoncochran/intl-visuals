@@ -1,7 +1,8 @@
-import aboutPic from "../../public/images/about-pic.jpg";
+import aboutPic from "../../public/images/about/about-pic.jpg";
 import Image from "next/image";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import styled from "@emotion/styled";
+import Link from "next/link";
 
 const BioP = styled.p`
   font-size: 18px;
@@ -13,7 +14,6 @@ const AboutMe = () => {
       sx={{
         padding: "0 200px",
         display: "flex",
-        // backgroundColor: "pink",
         width: "91%",
       }}
     >
@@ -50,8 +50,24 @@ const AboutMe = () => {
           driven by the ability to open a window into another world. This art
           form, and the opportunities it presents to meet new people and forge
           new experiences, keeps me in motion. If you wish to connect, collab,
-          or book me, you are welcome to hit me up.{" "}
+          or book me, you are welcome to{" "}
+          <Link href="/contact" passHref>
+            <Typography
+              component="span"
+              sx={{ fontSize: "18px", cursor: "pointer" }}
+            >
+              hit me up
+            </Typography>
+          </Link>
+          .
         </BioP>
+        <Box display="flex" justifyContent="center">
+          <Link href="/contact" passHref>
+            <Button variant="contained" sx={{ width: "120px" }}>
+              Contact
+            </Button>
+          </Link>
+        </Box>
       </Box>
     </Box>
   );

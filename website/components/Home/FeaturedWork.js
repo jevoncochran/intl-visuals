@@ -1,12 +1,12 @@
 import { Box } from "@mui/system";
 import Image from "next/image";
-import kiddos from "../../public/images/kiddos.jpg";
-import larissaOnBeach from "../../public/images/larissa-on-beach.jpg";
-import lexie from "../../public/images/lexie.jpg";
-import lucasHeadshot from "../../public/images/lucas-headshot.jpg";
-import peixeNipseyMural from "../../public/images/peixe-nipsey-mural.jpg";
-import rebeccaPic from "../../public/images/rebecca-pic.jpg";
-import sydneySmiling from "../../public/images/sydney-smiling.jpg";
+import kiddos from "../../public/images/home/kiddos.jpg";
+import larissaOnBeach from "../../public/images/home/larissa-on-beach.jpg";
+import lexie from "../../public/images/home/lexie.jpg";
+import lucasHeadshot from "../../public/images/home/lucas-headshot.jpg";
+import peixeNipseyMural from "../../public/images/home/peixe-nipsey-mural.jpg";
+import rebeccaPic from "../../public/images/home/rebecca-pic.jpg";
+import sydneySmiling from "../../public/images/home/sydney-smiling.jpg";
 import useWindowSize from "../../utils/useWindowSize";
 
 const FeaturedWork = () => {
@@ -25,11 +25,7 @@ const FeaturedWork = () => {
         padding: desktop ? "0 200px" : "24px",
       }}
     >
-      <Image
-        src={kiddos}
-        alt="International Visuals photography"
-        style={{ marginBottom: "24px" }}
-      />
+      <Image src={kiddos} alt="International Visuals photography" />
       <Image src={lexie} alt="International Visuals photography" />
       <Image src={larissaOnBeach} alt="International Visuals photography" />
       <Image src={lucasHeadshot} alt="International Visuals photography" />
